@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1em;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .wrap div {
+            position: relative;
+        }
+
+        .wrap .first, .second, .third {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(90,0,10,0.4);
+            /* typographic styles */
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            /* position the text centrally*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        .first:hover, .second:hover, .third:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div><a class="first" href="">maratang</a><img src="./image/maratang.jpg" /></div>
+        <div><a class="second" href="">maratang</a><img src="./image/maratang.jpg" /></div>
+        <div><a class="third" href="third">maratang</a><img src="./image/maratang.jpg" /></div>
+    </div>
+</body>
+</html>
