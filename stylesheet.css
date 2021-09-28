@@ -1,0 +1,44 @@
+﻿.wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+
+
+.wrap div {
+    position: relative;
+    
+}
+
+
+.wrap .first, .second, .third {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.74);
+    
+    /* typographic styles */
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+    .first:hover, .second:hover, .third:hover {
+        opacity: 1;
+    }
